@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/amatthieu/twitter-pain-au-bot#readme",
   "dependencies": {
-    "twitter": "^1.7.1"
+    "twit": "^2.2.11"
   }
 }
