@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/amatthieu/twitter-pain-au-bot/issues"
   },
-  "homepage": "https://github.com/amatthieu/twitter-pain-au-bot#readme"
+  "homepage": "https://github.com/amatthieu/twitter-pain-au-bot#readme",
+  "dependencies": {
+    "twitter": "^1.7.1"
+  }
 }
