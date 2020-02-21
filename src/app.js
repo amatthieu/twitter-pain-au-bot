@@ -13,9 +13,10 @@ stream.on('tweet', function (tweet) {
     }
     if(!text.includes('RT @')) {
       // There's either a space/other char
-      console.log(/[\s-'](\w{3,}?)ine\W/gi.exec(text))
+      console.log(/[\s-'](\w{3,}?[iïy])ne\W/gi.exec(text))
       // Or it begins with this word
-      console.log(/^(\w{3,}?)ine\W/gi.exec(text))
+      console.log(/^(\w{3,}?[iïy])ne\W/gi.exec(text))
+      // Digest capture group to know if it's a valid vowel+ïne or consonant+ine
       console.log(id, text, userId, name, screenName)
     }
   }
