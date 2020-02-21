@@ -12,7 +12,10 @@ stream.on('tweet', function (tweet) {
       text = tweet.extended_tweet.full_text
     }
     if(!text.includes('RT @')) {
-      console.log(/[^@](\w{3,}?)ine/gi.exec(text))
+      // There's either a space/other char
+      console.log(/[\s-'](\w{3,}?)ine\W/gi.exec(text))
+      // Or it begins with this word
+      console.log(/^(\w{3,}?)ine\W/gi.exec(text))
       console.log(id, text, userId, name, screenName)
     }
   }
